@@ -1,3 +1,5 @@
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500&family=Roboto:wght@300;400;700&display=swap');
+
 div.flightTicket {
     display: flex;
     justify-content: center;
@@ -7,6 +9,9 @@ div.flightTicket {
     margin:0;
     padding: 0;
     background-color:#EFF1F2;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+
 }
 
 .ticketWrap {
@@ -129,7 +134,6 @@ span.totalAmount {
 }
 
 span.pricebutton {
-    height: 20px;
     width: 50%;
     background-color: #1e1e1e;
     color: #fff;
@@ -142,4 +146,64 @@ span.pricebutton {
 span.pricebutton:hover {
     color: #ddd;
     transition: 0.3s ease;
+}
+
+
+/* nav item */
+div#ticketNavbar {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.ticketnav__wraper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    color: #545860;
+    padding: 0;
+    border-radius: 5px;
+    width: 60%;
+}
+ul.navList {
+    display: inline-flex;
+    align-content: center;
+    justify-content: center;
+    list-style: none;
+    gap: 10px;
+    width: 100%;
+}
+
+li.navItem {
+    display: flex;
+    flex-direction: column;
+    width: calc(100%/3);
+}
+
+.bestPricewraer {
+    display: flex;
+    flex-direction: column;
+   
+}
+
+span.best__pp, .pp_size {
+    font-size: 15px;
+
+}
+
+span.best__pp{
+    margin-bottom: 10px;
+}
+
+span.Best__pp__amount {
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.borderRight{
+    border-right: 1px solid #b2b2b2;
 }
