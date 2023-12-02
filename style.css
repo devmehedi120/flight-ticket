@@ -1,0 +1,40 @@
+div#flightTIcke {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ticketWrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    width: 100%;
+}
+
+.logoNtime {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ticketPrice {
+    display: flex;
+    border-left: 1px solid #ddd;
+}
+
+.flightTime {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flightTime {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    gap: 5px;
+}
