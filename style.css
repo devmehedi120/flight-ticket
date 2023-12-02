@@ -1,11 +1,29 @@
   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500&family=Roboto:wght@300;400;700&display=swap');
 
+  div#flightTicketPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin:0;
+    padding: 0;
+    background-color:#EFF1F2;
+    font-family: 'Poppins', sans-serif;
+}
+
+.stopsFilterWrap {
+    display: flex;
+    width: 25%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+}
+
 div.flightTicket {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    width: 100%;
+    width: 75%;
     margin:0;
     padding: 0;
     background-color:#EFF1F2;
@@ -21,7 +39,7 @@ div.flightTicket {
     background-color: #f9f9f9;
     border-radius: 5px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    width: 60%;
+    width: 90%;
     color: #545860;
 }
 
@@ -84,6 +102,7 @@ span.timeLeanth {
     width: 100%;
     justify-content: center;
     align-items: center;
+    gap: 5px;
 }
 
 span.svg {
@@ -133,17 +152,18 @@ span.totalAmount {
     line-height: 1.5;
 }
 
-span.pricebutton {
-    width: 50%;
+button.pricebutton {
     background-color: #1e1e1e;
     color: #fff;
     text-align: center;
-    padding: 6px;
-    border-radius: 9px;
+    border-radius: 10px;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
 }
-
-span.pricebutton:hover {
+button.pricebutton:hover {
     color: #ddd;
     transition: 0.3s ease;
 }
@@ -166,23 +186,31 @@ div#ticketNavbar {
     color: #545860;
     padding: 0;
     border-radius: 5px;
-    width: 60%;
+    width:90%;
 }
-ul.navList {
+div.navList {
     display: inline-flex;
     align-content: center;
     justify-content: center;
     list-style: none;
-    gap: 10px;
     width: 100%;
 }
 
-li.navItem {
+button.navItem {
     display: flex;
     flex-direction: column;
     width: calc(100%/3);
+    user-select: none;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    background-color: #fff;
+    text-align: left;
+    padding: 8px 12px;
 }
-
+.navList button:active{
+    background-color: #130f40;
+    color: #fff;
+}
 .bestPricewraer {
     display: flex;
     flex-direction: column;
@@ -206,4 +234,17 @@ span.Best__pp__amount {
 
 .borderRight{
     border-right: 1px solid #b2b2b2;
+}
+
+svg.LegInfo_planeEnd__ZDkxM {
+    width: 18px;
+}
+
+.borderleftRadius{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.borderrighttRadius{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
